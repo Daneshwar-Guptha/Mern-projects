@@ -1,0 +1,70 @@
+/* Page Layout */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #290be8;
+  padding: 20px;
+}
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  width: 100%;
+  height: 50px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-field label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 4px;
+  transition: all 0.2s ease;
+  color: #6b7280;
+  pointer-events: none;
+}
+
+.input-field input:focus + label,
+.input-field input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+.input-field input:focus {
+  border-color: #2563eb;
+}
+/* Button */
+.login-button {
+  width: 100%;
+  margin-top: 12px;
+}
